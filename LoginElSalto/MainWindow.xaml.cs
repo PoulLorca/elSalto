@@ -38,7 +38,7 @@ namespace LoginElSalto
                 bool res = SALT_Helper.ValidateSaltyPassword(password, response.First());
 
                 if (res)
-                    lblMensaje.Content = "Sesion Iniciada correctamente";
+                    lblMensaje.Content = "Bienvenido " + username;
                 else
                     lblMensaje.Content = "La contraseña con coincide";
 

@@ -1,0 +1,21 @@
+﻿<Window x:Class="PlantasGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlantasGUI"
+        mc:Ignorable="d"
+        Title="El Salto" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Plantas">
+                    <MenuItem x:Name="Agregar" Header="Agregar" Click="Agregar_Click"/>
+                    <MenuItem x:Name="ListarTodas" Header="Listar todos" Click="ListarTodas_Click"/>
+                </MenuItem>
+            </Menu>
+            <DataGrid x:Name="dgPlantas" VerticalAlignment="Top" HorizontalAlignment="Center" Width="Auto" CanUserAddRows="False"/>
+        </DockPanel>
+        <Label x:Name="lblInfo" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
