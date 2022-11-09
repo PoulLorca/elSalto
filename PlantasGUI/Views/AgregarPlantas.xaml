@@ -1,0 +1,61 @@
+﻿<Window x:Class="PlantasGUI.Views.AgregarPlantas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlantasGUI.Views"
+        xmlns:validations="clr-namespace:PlantasGUI.Validations"
+        mc:Ignorable="d"
+        Title="AgregarPlantas" Height="450" Width="800">
+    <Grid Margin="20" Width="400" VerticalAlignment="Top" HorizontalAlignment="Left" Height="400">
+
+        <!--Document Format-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <!--Labels-->
+        <Label x:Name="lblNombreComun" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Nombre Comun"/>
+        <Label x:Name="lblNombreCientifico" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Nombre Cientifico"/>
+        <Label x:Name="lblTipoPlanta" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Tipo de Planta"/>
+        <Label x:Name="lblDescripcion" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Descripcion"/>
+        <Label x:Name="lblTiempoRiego" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Tiempo de Riego"/>
+        <Label x:Name="lblCantidadAgua" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Cantidad de Agua"/>
+        <Label x:Name="lblEpoca" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Epoca"/>
+
+        <!--Inputs-->
+        <TextBox x:Name="txtNombreComun" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="10">
+            <TextBox.Text>
+                <Binding Path="NombreComun" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                    <Binding.ValidationRules>
+                        <validations:NombreComunCustomRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+    </Grid>
+</Window>

@@ -32,7 +32,8 @@ namespace PlantasGUI
 
         private void Agregar_Click(object sender, RoutedEventArgs e)
         {
-
+            Views.AgregarPlantas agregarPlanta = new Views.AgregarPlantas();
+            agregarPlanta.ShowDialog();
         }
 
         private void ListarTodas_Click(object sender, RoutedEventArgs e)
