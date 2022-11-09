@@ -69,12 +69,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AES_Helper.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CommonBC.cs" />
     <Compile Include="Ipersistente.cs" />
+    <Compile Include="IsValidCantidadAgua.cs" />
+    <Compile Include="IsValidNombreCientifico.cs" />
+    <Compile Include="IsValidNombreComun.cs" />
+    <Compile Include="IsValidTiempoRiego.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -83,6 +88,8 @@
   <ItemGroup>
     <Compile Include="ObservableObjects.cs" />
     <Compile Include="Planta.cs" />
+    <Compile Include="PlantaCollection.cs" />
+    <Compile Include="PlantasReporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

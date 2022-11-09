@@ -19,12 +19,23 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
 
         <!--Labels-->
         <Label x:Name="lblUsuario" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ingrese Usuario"/>
         <Label x:Name="lblContraseña" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ingrese Contraseña"/>
-        <Label x:Name="lblMensaje" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label x:Name="lblMensaje" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <ProgressBar  Name="ProgressBarLoading"
+              Grid.Row="5" 
+              Grid.ColumnSpan="3"
+              Minimum="0"
+              Maximum="100"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"         
+              Width="300"
+              Height="10"
+              IsIndeterminate="False"/>
 
         <!--Inputs-->
         <TextBox x:Name="txtUsuario" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="25">
@@ -50,6 +61,6 @@
         </PasswordBox>
 
         <!--Button-->
-        <Button x:Name="btnIniciar" Grid.Column="2" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Iniciar Sesión" Click="btnIniciar_Click"/>
+        <Button x:Name="btnIniciar" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Iniciar Sesión" Click="btnIniciar_Click"/>
     </Grid>
 </Window>

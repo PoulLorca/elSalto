@@ -145,6 +145,12 @@
       <LastGenOutput>ModeloLogin.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlantasGUI\PlantasGUI.csproj">
+      <Project>{e7056a17-d510-46a7-a9f6-abeee5445658}</Project>
+      <Name>PlantasGUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
