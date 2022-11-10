@@ -69,7 +69,7 @@
             </TextBox.Text>
         </TextBox>
         <ComboBox x:Name="txtTipoPlanta" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
-            <ComboBoxItem>Herbácea</ComboBoxItem>
+            <ComboBoxItem>Herbacea</ComboBoxItem>
             <ComboBoxItem>Matorral</ComboBoxItem>
             <ComboBoxItem>Arbusto</ComboBoxItem>
             <ComboBoxItem>Arbol</ComboBoxItem>
@@ -102,9 +102,9 @@
             </TextBox.Text>
         </TextBox>
         <ComboBox x:Name="txtEpoca" Grid.Column="2" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
-            <ComboBoxItem>Veranos</ComboBoxItem>
+            <ComboBoxItem>Verano</ComboBoxItem>
             <ComboBoxItem>Invierno</ComboBoxItem>
-            <ComboBoxItem>Otoño</ComboBoxItem>
+            <ComboBoxItem>Otono</ComboBoxItem>
             <ComboBoxItem>Primavera</ComboBoxItem>
         </ComboBox>
         <CheckBox x:Name="chkVenenosa" Grid.Column="2" Grid.Row="14" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Es venenosa?"/>

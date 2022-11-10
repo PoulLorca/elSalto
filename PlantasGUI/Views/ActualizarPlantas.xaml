@@ -47,65 +47,27 @@
         <Label x:Name="lblEpoca" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Epoca"/>
 
         <!--Inputs-->
-        <TextBox x:Name="txtNombreComun" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="10">
-            <TextBox.Text>
-                <Binding Path="NombreComun" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                    <Binding.ValidationRules>
-                        <validations:NombreComunCustomRule/>
-                        <validations:NotNullOrEmptyRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
-        <TextBox x:Name="txtNombreCientifico" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="150">
-            <TextBox.Text>
-                <Binding Path="NombreCientifico" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                    <Binding.ValidationRules>
-                        <validations:NombreCientificoCustomRule/>
-                        <validations:NotNullOrEmptyRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
+        <TextBox x:Name="txtNombreComun" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="10" />
+        <TextBox x:Name="txtNombreCientifico" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" MaxLength="150"/>
+        
         <ComboBox x:Name="txtTipoPlanta" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
             <ComboBoxItem>Herbácea</ComboBoxItem>
             <ComboBoxItem>Matorral</ComboBoxItem>
             <ComboBoxItem>Arbusto</ComboBoxItem>
             <ComboBoxItem>Arbol</ComboBoxItem>
         </ComboBox>
-        <TextBox x:Name="txtDescripcion" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
-            <TextBox.Text>
-                <Binding Path="Descripcion" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                    <Binding.ValidationRules>
-                        <validations:NotNullOrEmptyRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
-        <TextBox x:Name="txtTiempoRiego" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtOnlyNumber_PreviewTextInput">
-            <TextBox.Text>
-                <Binding Path="TiempoRiego" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                    <Binding.ValidationRules>
-                        <validations:NotNullOrEmptyRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
-        <TextBox x:Name="txtCantidadAgua" Grid.Column="2" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtOnlyNumber_PreviewTextInput">
-            <TextBox.Text>
-                <Binding Path="CantidadAgua" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
-                    <Binding.ValidationRules>
-                        <validations:NotNullOrEmptyRule/>
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
+
+        <TextBox x:Name="txtDescripcion" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" />
+        <TextBox x:Name="txtTiempoRiego" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtOnlyNumber_PreviewTextInput" />
+        <TextBox x:Name="txtCantidadAgua" Grid.Column="2" Grid.Row="10" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150" PreviewTextInput="txtOnlyNumber_PreviewTextInput" />
+
         <ComboBox x:Name="txtEpoca" Grid.Column="2" Grid.Row="12" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150">
             <ComboBoxItem>Veranos</ComboBoxItem>
             <ComboBoxItem>Invierno</ComboBoxItem>
             <ComboBoxItem>Otoño</ComboBoxItem>
             <ComboBoxItem>Primavera</ComboBoxItem>
         </ComboBox>
+        
         <CheckBox x:Name="chkVenenosa" Grid.Column="2" Grid.Row="14" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Es venenosa?"/>
         <CheckBox x:Name="chkAutoctona" Grid.Column="2" Grid.Row="16" VerticalAlignment="Center" HorizontalAlignment="Left" Content="Es autoctona?"/>
 

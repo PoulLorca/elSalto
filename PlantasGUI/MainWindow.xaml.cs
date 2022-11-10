@@ -38,7 +38,8 @@ namespace PlantasGUI
 
         private void ListarTodas_Click(object sender, RoutedEventArgs e)
         {
-
+            Views.ListarPlantas ventanaListar = new Views.ListarPlantas();
+            ventanaListar.ShowDialog();
         }
 
         private void CargarGrilla()

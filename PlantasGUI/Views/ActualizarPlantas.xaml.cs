@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -23,26 +24,30 @@ namespace PlantasGUI.Views
         private static Regex n_regex = new Regex("[^0-9]+");
         PlantasNegocio.Planta planta;
 
-        public ActualizarPlantas(int id)
+        public ActualizarPlantas(PlantasNegocio.Planta plantaSeleccionada)
         {
             InitializeComponent();
 
-            this.Title = String.Format("Actualizar planta {0}", id);
+            this.Title = String.Format("Actualizar planta {0}", plantaSeleccionada.Id);
 
-            planta = new PlantasNegocio.Planta();            
+            planta = plantaSeleccionada;            
 
-            CargarFormulario(id);
+            CargarFormulario(plantaSeleccionada.Id);
         }
 
         private void CargarFormulario(int id)
         {
             bool response = planta.Read(id);
+
+            
+
             if (response)
             {                
                 txtIndex.Text = id.ToString();
                 txtNombreComun.Text = planta.NombreComun;
-                txtNombreCientifico.Text = planta.NombreCientifico;               
-                if (planta.TipoPlanta == "Herbácea")
+                txtNombreCientifico.Text = planta.NombreCientifico;          
+
+                if (planta.TipoPlanta == "Herbacea")
                 {
                     txtTipoPlanta.SelectedIndex = 0;
                 }
@@ -63,19 +68,19 @@ namespace PlantasGUI.Views
                 txtCantidadAgua.Text = planta.CantidadAgua.ToString();
                 if (planta.Epoca == "Verano")
                 {
-                    txtTipoPlanta.SelectedIndex = 0;
+                    txtEpoca.SelectedIndex = 0;
                 }
                 else if (planta.Epoca == "Invierno")
                 {
-                    txtTipoPlanta.SelectedIndex = 1;
+                    txtEpoca.SelectedIndex = 1;
                 }
-                else if (planta.Epoca == "Otoño")
+                else if (planta.Epoca == "Otono")
                 {
-                    txtTipoPlanta.SelectedIndex = 2;
+                    txtEpoca.SelectedIndex = 2;
                 }
                 else
                 {
-                    txtTipoPlanta.SelectedIndex = 3;
+                    txtEpoca.SelectedIndex = 3;
                 }
 
                 chkVenenosa.IsChecked = (planta.EsVenenosa) ? true : false;
