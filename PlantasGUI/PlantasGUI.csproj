@@ -65,12 +65,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\AgregarPlanta.xaml.cs">
-      <DependentUpon>AgregarPlanta.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Validations\NombreCientificoCustomRule.cs" />
     <Compile Include="Validations\NombreComunCustomRule.cs" />
     <Compile Include="Validations\NotNullOrEmptyRule.cs" />
+    <Compile Include="Views\ActualizarPlantas.xaml.cs">
+      <DependentUpon>ActualizarPlantas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AgregarPlantas.xaml.cs">
       <DependentUpon>AgregarPlantas.xaml</DependentUpon>
     </Compile>
@@ -86,7 +86,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\AgregarPlanta.xaml">
+    <Page Include="Views\ActualizarPlantas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
