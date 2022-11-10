@@ -51,8 +51,8 @@ namespace PlantasNegocio
                 if (string.IsNullOrEmpty(value.ToString()))
                     throw new ArgumentNullException(null, "El nombre es obligatorio");
 
-                if (value.ToString().Length <= 10 || value.ToString().Length >= 150)
-                    throw new ArgumentNullException(null, "El largo no corresponde");
+               // if (value.ToString().Length <= 10 || value.ToString().Length >= 150)
+                    //throw new ArgumentNullException(null, "El largo no corresponde");
 
                 //ValidateProperty(value);
                 OnPropertyChanged(ref _NombreCientifico, value);
