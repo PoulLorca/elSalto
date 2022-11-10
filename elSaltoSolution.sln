@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantasNegocio", "PlantasNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantasDALC", "PlantasDALC\PlantasDALC.csproj", "{B8C3410B-AA66-4991-9AF5-3CAC6BB0877B}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{DE5063E1-2711-4B0B-9343-9A62FDEFCE39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{B8C3410B-AA66-4991-9AF5-3CAC6BB0877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8C3410B-AA66-4991-9AF5-3CAC6BB0877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8C3410B-AA66-4991-9AF5-3CAC6BB0877B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5063E1-2711-4B0B-9343-9A62FDEFCE39}.Debug|Any CPU.ActiveCfg = Debug
+		{DE5063E1-2711-4B0B-9343-9A62FDEFCE39}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
